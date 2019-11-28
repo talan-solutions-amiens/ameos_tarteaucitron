@@ -278,6 +278,12 @@ ameos {
 			vimeo = 0
 			#cat=plugin.ameos_tarteaucitron.services.video; type=boolean; label=Youtube
 			youtube = 0
+			hotjar = 0
+            hotjar {
+                #cat=plugin.ameos_tarteaucitron.services.apis; type=string; label=Hotjar (Key)
+                hotjarId =
+                hotjarSv =
+            }
 		}
 	}
 }

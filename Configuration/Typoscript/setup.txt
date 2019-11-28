@@ -645,6 +645,15 @@ page {
                     )
                     if.isTrue = {$ameos.tarteaucitron.services.youtube}
                 }
+                730 = TEXT
+                730 {
+                    value (
+                        tarteaucitron.user.hotjarId = '{$ameos.tarteaucitron.services.hotjar.hotjarId}';
+                        tarteaucitron.user.hotjarSv = '{$ameos.tarteaucitron.services.hotjar.hotjarSv}';
+                        (tarteaucitron.job = tarteaucitron.job || []).push('hotjar');
+                    )
+                    if.isTrue = {$ameos.tarteaucitron.services.hotjar}
+                }
     	}
     }
 }
