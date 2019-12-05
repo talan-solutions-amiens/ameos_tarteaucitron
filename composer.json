@@ -1,5 +1,5 @@
 {
-    "name": "ameos/ameos_tarteaucitron",
+    "name": "talan-solutions-amiens/ameos_tarteaucitron",
     "description": "Integrates tarteaucitron.js in TYPO3 (see : https://opt-out.ferank.eu )",
     "type": "typo3-cms-extension",
     "homepage": "https://github.com/ameos/ameos_tarteaucitron",
