@@ -10,6 +10,7 @@ page {
             disableCompression = 1
         }
         ameostarteaucitron = EXT:ameos_tarteaucitron/Resources/Public/js/ameostarteaucitron.js   
+        ameostarteaucitron = EXT:ameos_tarteaucitron/Resources/Public/js/customservices.js
     }
 
     meta {
@@ -653,6 +654,16 @@ page {
                         (tarteaucitron.job = tarteaucitron.job || []).push('hotjar');
                     )
                     if.isTrue = {$ameos.tarteaucitron.services.hotjar}
+                }
+                740 = TEXT
+                740 {
+                    value (
+                        tarteaucitron.user.pardotPiAId = {$ameos.tarteaucitron.services.pardot.pardotPiAId};
+                        tarteaucitron.user.pardotPiCId = {$ameos.tarteaucitron.services.pardot.pardotPiCId};
+                        tarteaucitron.user.pardotHostname = {$ameos.tarteaucitron.services.pardot.pardotHostname};
+                        (tarteaucitron.job = tarteaucitron.job || []).push('pardot');
+                    )
+                    if.isTrue = {$ameos.tarteaucitron.services.pardot}
                 }
     	}
     }

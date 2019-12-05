@@ -284,6 +284,13 @@ ameos {
                 hotjarId =
                 HotjarSv =
             }
+            pardot = 0
+            pardot {
+                #cat=plugin.ameos_tarteaucitron.services.apis; type=string; label=Pardot (Key)
+                pardotPiAId =
+                pardotPiCId =
+                pardotHostname =
+            }
 		}
 	}
 }
