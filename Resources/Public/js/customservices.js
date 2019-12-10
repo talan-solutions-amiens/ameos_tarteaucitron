@@ -3,13 +3,13 @@ tarteaucitron.services.pardot = {
     "type": "ads",
     "name": "Pardot",
     "needConsent": true,
-    "cookies": [],
+    "cookies": ['pardot', 'IpvID', 'visitor_idID', 'visitor_idID-hash'],
     "js": function () {
         "use strict";
         // When user allow cookie
-        var piAId = tarteaucitron.user.pardotPiAId;
-        var piCId = tarteaucitron.user.pardotPiCId;
-        var piHostname = tarteaucitron.user.pardotPiHostname;
+        window.piAId = tarteaucitron.user.pardotPiAId;
+        window.piCId = tarteaucitron.user.pardotPiCId;
+        window.piHostname = tarteaucitron.user.pardotPiHostname;
 
         (function() {
             function async_load(){
