@@ -10,7 +10,7 @@ page {
             disableCompression = 1
         }
         ameostarteaucitron = EXT:ameos_tarteaucitron/Resources/Public/js/ameostarteaucitron.js   
-        ameostarteaucitron = EXT:ameos_tarteaucitron/Resources/Public/js/customservices.js
+        customservices = EXT:ameos_tarteaucitron/Resources/Public/js/customservices.js
     }
 
     meta {
